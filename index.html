@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Invitación de Laila 🧜‍♀️</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="ocean-bg"></div>
     <div id="bubble-container"></div>
 
@@ -19,7 +22,11 @@
             
             <div class="letter">
                 <div class="carta-contenido">
+                    
                     <div class="photo-carousel-container">
+                        <button class="carousel-btn btn-prev" onclick="event.stopPropagation(); moverCarrusel(-1)">❮</button>
+                        <button class="carousel-btn btn-next" onclick="event.stopPropagation(); moverCarrusel(1)">❯</button>
+                        
                         <div class="photo-carousel" id="carousel-track">
                             <div class="polaroid-item">
                                 <img src="media/foto1.jpg" alt="Laila 1">
@@ -44,9 +51,19 @@
                         <p>¡Acompáñame a soplar mis 4 velitas, <strong>Laila</strong> te espera!</p>
                     </div>
 
+                    <div id="seccion-sorpresa" class="bloqueado">
+                        <div id="contenido-sorpresa">
+                            <div class="cofre-icon">🎁</div>
+                            <p>Hay una sorpresa preparada...</p>
+                            <div class="badge-fecha">Disponible el 07 de Junio</div>
+                        </div>
+                    </div> 
+
                     <div id="countdown">
                         <div class="time-box"><span id="days">00</span><p>Días</p></div>
                         <div class="time-box"><span id="hours">00</span><p>Hrs</p></div>
+                        <div class="time-box"><span id="minutes">00</span><p>Min</p></div>
+                        <div class="time-box"><span id="seconds">00</span><p>Seg</p></div>
                     </div>
 
                     <div class="cita">
@@ -54,7 +71,10 @@
                         🕒 4:00 PM
                     </div>
 
-                    <a href="https://maps.google.com" target="_blank" class="map-btn">📍 Ver Ubicación</a>
+                    <a href="https://maps.google.com/?q=TU_UBICACION_AQUI" target="_blank" class="map-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Ver Ubicación en Mapa
+                    </a>
                 </div>
                 
                 <img src="media/image-removebg-preview (13).png" alt="Ariel" class="ariel-imagen">
