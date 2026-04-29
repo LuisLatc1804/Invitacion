@@ -74,7 +74,7 @@ function crearBurbuja() {
 }
 
 // --- CONTADOR REGRESIVO (Días, Horas, Minutos, Segundos) ---
-const fechaEvento = new Date("June 7, 2026 16:00:00").getTime();
+const fechaEvento = new Date("June 14, 2026 11:00:00").getTime();
 
 setInterval(() => {
     const ahora = new Date().getTime();
@@ -123,3 +123,4 @@ function verificarDesbloqueo() {
 `;
     }
 }
+
